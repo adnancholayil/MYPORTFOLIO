@@ -2,24 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://adnanceeyy.vercel.app/</loc>
-    <lastmod>2026-05-12</lastmod>
+    <loc>https://adnanc.vercel.app/</loc>
+    <lastmod>2026-05-11</lastmod>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://adnanceeyy.vercel.app/adnan.jpg</image:loc>
-      <image:title>Adnan Cholayil - MERN Developer</image:title>
+      <image:loc>https://adnanc.vercel.app/adnan.jpg</image:loc>
+      <image:title>Adnan Cholayil - MERN Stack Developer</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://adnanceeyy.vercel.app/Adnan-Cholayil.jpeg</image:loc>
-      <image:title>Adnan Cholayil Portfolio Photo</image:title>
+      <image:loc>https://adnanc.vercel.app/Adnan-Cholayil.jpeg</image:loc>
+      <image:title>Adnan Cholayil - UI UX Designer Portfolio</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://adnanceeyy.vercel.app/adnan-cholayil-2.jpg</image:loc>
-      <image:title>Adnan Cholayil Profile Picture</image:title>
+      <image:loc>https://adnanc.vercel.app/adnan-cholayil-2.jpg</image:loc>
+      <image:title>Adnan Cholayil - Full Stack Developer</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://adnanceeyy.vercel.app/projects.html</loc>
+    <loc>https://adnanc.vercel.app/projects.html</loc>
     <lastmod>2026-05-12</lastmod>
     <priority>0.8</priority>
   </url>

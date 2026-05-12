@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://adnanceeyy.vercel.app/sitemap.xml
+Sitemap: https://adnanc.vercel.app/sitemap.xml
