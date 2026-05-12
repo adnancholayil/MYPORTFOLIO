@@ -3,19 +3,19 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://adnanc.vercel.app/</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-05-12</lastmod>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://adnanc.vercel.app/adnan.jpg</image:loc>
-      <image:title>Adnan Cholayil - MERN Stack Developer</image:title>
+      <image:title>Adnan Cholayil - MERN Stack Developer & UI Designer</image:title>
     </image:image>
     <image:image>
       <image:loc>https://adnanc.vercel.app/Adnan-Cholayil.jpeg</image:loc>
-      <image:title>Adnan Cholayil - UI UX Designer Portfolio</image:title>
+      <image:title>Adnan Cholayil Portfolio - UI UX Specialist</image:title>
     </image:image>
     <image:image>
       <image:loc>https://adnanc.vercel.app/adnan-cholayil-2.jpg</image:loc>
-      <image:title>Adnan Cholayil - Full Stack Developer</image:title>
+      <image:title>Adnan Cholayil - Full Stack Web Developer</image:title>
     </image:image>
   </url>
   <url>
