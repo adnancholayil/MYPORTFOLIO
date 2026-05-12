@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://adnanceeyy.vercel.app/</loc>
-    <lastmod>2026-04-30</lastmod>
+    <lastmod>2026-05-12</lastmod>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://adnanceeyy.vercel.app/adnan.jpg</image:loc>
@@ -20,7 +20,7 @@
   </url>
   <url>
     <loc>https://adnanceeyy.vercel.app/projects.html</loc>
-    <lastmod>2026-04-30</lastmod>
+    <lastmod>2026-05-12</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>
