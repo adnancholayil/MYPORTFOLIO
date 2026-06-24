@@ -559,6 +559,14 @@
             .desktop-icon[onclick*="appleclock"] .folder-icon-wrap::after { content: '⏰'; font-size: 1.8rem; }
             .desktop-icon[onclick*="rps"] .folder-icon-wrap { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%) !important; }
             .desktop-icon[onclick*="rps"] .folder-icon-wrap::after { content: '✊'; font-size: 1.8rem; }
+            .desktop-icon[onclick*="galexy"] .folder-icon-wrap { background: linear-gradient(135deg, #ff9966 0%, #ff5e62 100%) !important; }
+            .desktop-icon[onclick*="galexy"] .folder-icon-wrap::after { content: '🧾'; font-size: 1.8rem; }
+            .desktop-icon[onclick*="fagency"] .folder-icon-wrap { background: linear-gradient(135deg, #b224ef 0%, #7579ff 100%) !important; }
+            .desktop-icon[onclick*="fagency"] .folder-icon-wrap::after { content: '🚀'; font-size: 1.8rem; }
+            .desktop-icon[onclick*="budgeto"] .folder-icon-wrap { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%) !important; }
+            .desktop-icon[onclick*="budgeto"] .folder-icon-wrap::after { content: '💰'; font-size: 1.8rem; }
+            .desktop-icon[onclick*="emea"] .folder-icon-wrap { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%) !important; }
+            .desktop-icon[onclick*="emea"] .folder-icon-wrap::after { content: '🏫'; font-size: 1.8rem; }
             .desktop-icon[onclick*="window.location.href='index.html'"] .folder-icon-wrap { background: #333 !important; }
             .desktop-icon[onclick*="window.location.href='index.html'"] .folder-icon-wrap::after { content: '🏠'; font-size: 1.8rem; }
             .pdf-icon-wrap { background: #fff !important; }
@@ -688,6 +696,38 @@
             <span class="icon-label">RPS</span>
         </div>
 
+        <!-- Project 8: Galexy Nine -->
+        <div class="desktop-icon" onclick="openPreview('galexy')">
+            <div class="folder-icon-wrap">
+                <img src="folder.png" alt="Galexy Nine Billing POS Project Folder Icon" class="folder-img">
+            </div>
+            <span class="icon-label">Galexy Nine</span>
+        </div>
+
+        <!-- Project 9: FAgency -->
+        <div class="desktop-icon" onclick="openPreview('fagency')">
+            <div class="folder-icon-wrap">
+                <img src="folder.png" alt="FAgency Digital Agency Project Folder Icon" class="folder-img">
+            </div>
+            <span class="icon-label">FAgency</span>
+        </div>
+
+        <!-- Project 10: Budgeto -->
+        <div class="desktop-icon" onclick="openPreview('budgeto')">
+            <div class="folder-icon-wrap">
+                <img src="folder.png" alt="Budgeto Expense Manager Project Folder Icon" class="folder-img">
+            </div>
+            <span class="icon-label">Budgeto</span>
+        </div>
+
+        <!-- Project 11: EMEA Special Care -->
+        <div class="desktop-icon" onclick="openPreview('emea')">
+            <div class="folder-icon-wrap">
+                <img src="folder.png" alt="EMEA Special Care Project Folder Icon" class="folder-img">
+            </div>
+            <span class="icon-label">EMEA Special Care</span>
+        </div>
+
         <!-- Home Shortcut -->
         <!-- Fake Files -->
 
@@ -738,7 +778,7 @@
             <p id="projectDesc" class="preview-desc">Detailed description here.</p>
             <div class="preview-actions">
                 <a href="#" target="_blank" class="preview-btn" id="previewLink">VIEW LIVE PROJECT</a>
-                <a href="https://github.com/adnanceeyy" target="_blank" class="preview-btn secondary">SOURCE CODE</a>
+                <a href="#" target="_blank" class="preview-btn secondary" id="previewEnquiry">WEBSITE ENQUIRY</a>
             </div>
         </div>
     </div>
@@ -821,6 +861,30 @@
                 desc: 'Rock Paper Scissors Game.',
                 img: 'rps.png',
                 link: 'https://adnanceeyy.github.io/RPS'
+            },
+            'galexy': {
+                name: 'Galexy Nine',
+                desc: 'MERN stack Billing and POS management system with high-end tools.',
+                img: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200',
+                link: 'https://galexy-nine.vercel.app/login'
+            },
+            'fagency': {
+                name: 'FAgency',
+                desc: 'Premium digital agency corporate presentation site featuring minimalist design styling.',
+                img: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200',
+                link: 'https://fagency.vercel.app/'
+            },
+            'budgeto': {
+                name: 'Budgeto',
+                desc: 'Comprehensive expense management application available on Web & Android.',
+                img: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=1200',
+                link: 'https://budgeto-iota.vercel.app/'
+            },
+            'emea': {
+                name: 'EMEA Special Care',
+                desc: 'A comprehensive special school website portal enabling parent access to child progress reports, galleries, and school information.',
+                img: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1200',
+                link: 'https://emeaspecialcare.vercel.app'
             }
         };
 
@@ -834,12 +898,26 @@
             document.getElementById('previewImg').src = data.img;
             document.getElementById('previewLink').href = data.link;
             
+            // Set WhatsApp Enquiry Link
+            const whatsappText = encodeURIComponent(`Hi Adnan, I'm interested in building a similar website to "${data.name}".`);
+            document.getElementById('previewEnquiry').href = `https://wa.me/917034887478?text=${whatsappText}`;
+            
             document.getElementById('previewWindow').classList.add('active');
         }
 
         function closePreview() {
             document.getElementById('previewWindow').classList.remove('active');
         }
+
+        // Close on outside click
+        document.addEventListener('click', (e) => {
+            const previewWindow = document.getElementById('previewWindow');
+            if (previewWindow.classList.contains('active')) {
+                if (!previewWindow.contains(e.target) && !e.target.closest('.desktop-icon')) {
+                    closePreview();
+                }
+            }
+        });
 
         let settingsClickCount = 0;
         function showSettingsLoading() {

@@ -1445,9 +1445,13 @@
       // --- NAVIGATION ---
       document.querySelectorAll(".nav-link, .logo").forEach((link) => {
         link.addEventListener("click", (e) => {
-          e.preventDefault();
           const targetId = link.getAttribute("href");
-          if (!targetId || targetId === "#") {
+          if (!targetId || !targetId.startsWith("#")) {
+            // Let non-anchor links (like file downloads and external URLs) function normally
+            return;
+          }
+          e.preventDefault();
+          if (targetId === "#") {
             if (lenis) lenis.scrollTo(0);
             return;
           }
